@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+:root {
+  --cor-principal: #0a2344;
+  --cor-secundaria: #2a476c;
+  --cor-branca: #ffffff;
+  --cor-background: #f0f0f0;
+  --sucesso: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTAINER QUE ALINHA OS CARDS LADO A LADO */
+.main-layout {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  align-items: stretch; /* Garante que os cards tenham o mesmo tamanho */
+}
+
+/* ESTILO DOS CARDS */
+.form-card, .list-card {
+  flex: 1;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card {
+  background-color: var(--cor-principal);
+  color: white;
+}
+
+.list-card {
+  background-color: white;
+  color: var(--cor-principal);
+}
+
+/* CENTRALIZAÇÃO DOS TÍTULOS */
+h1, h2 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #a2a8af;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+.btn-enviar {
+  background-color: var(--cor-secundaria);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  filter: brightness(1.2);
+}
+
+.btn-cancelar {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* LISTA DE LEADS */
+.leads-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.lead-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.lead-item:hover {
+  background-color: #f9f9f9;
+}
+
+.lead-info strong {
+  display: block;
+  font-size: 15px;
+}
+
+.lead-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* BOTÕES DE AÇÃO (LIXEIRA E EDITAR) */
+.acoes {
+  display: flex;
+  gap: 15px;
+}
+
+.acoes button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.acoes button:hover {
+  transform: scale(1.3);
+}
+
+/* MENSAGENS */
+.status-msg {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sucesso { background-color: var(--sucesso); color: white; }
+.erro { background-color: #dc3545; color: white; }
