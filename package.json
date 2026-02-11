@@ -1,0 +1,11 @@
+{
+  "name": "projeto-leads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=cadastrarLead"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0"
+  }
+}

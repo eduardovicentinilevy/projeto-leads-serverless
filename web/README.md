@@ -1,16 +1,24 @@
 # ☁️ Cloud Leads Manager
-Sistema fullstack para gerenciamento de contatos utilizando **React** e **Google Cloud Platform**.
+
+Sistema Fullstack profissional para captura e gerenciamento de leads, utilizando arquitetura Serverless no Google Cloud Platform.
 
 ## 🚀 Tecnologias
-- **Frontend:** React.js com CSS Moderno.
-- **Backend:** Node.js rodando em Google Cloud Functions (Serverless).
-- **Estilização:** Montserrat Font & Flexbox layout.
+- **Interface:** React.js (Hooks & Flexbox)
+- **Back-end:** Node.js (Google Cloud Functions)
+- **Design:** Identidade visual baseada na paleta Deep Blue e tipografia Montserrat.
+- **Monitoramento:** Google Cloud Logging.
 
 ## 🛠️ Funcionalidades
-- Cadastro de leads na nuvem.
-- Edição local e sincronização com API.
-- Remoção de registros com confirmação.
-- Interface responsiva com temas Azul Profundo e Branco Neve.
+- **CRUD Completo:** Cadastro, visualização, edição e exclusão de leads.
+- **Sincronização Cloud:** Comunicação via Fetch API com endpoint hospedado no GCP.
+- **Feedback em Tempo Real:** Mensagens de status para sucesso ou erro de conexão.
+
+## 📦 Como rodar o projeto
+1. Clone o repositório.
+2. Navegue até a pasta `web`.
+3. Instale as dependências: `npm install`.
+4. Inicie o servidor local: `npm start`.
 
 ---
-*Eduardo Vicentini Levy - 2026*
+**Desenvolvido por Eduardo Vicentini Levy**
+*Foco em Engenharia de Nuvem e Desenvolvimento Fullstack.*
