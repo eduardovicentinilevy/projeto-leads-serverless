@@ -1,5 +1,3 @@
-Aqui está o arquivo README.md consolidado, com uma escrita técnica, direta e sem o uso de emojis, conforme solicitado. O texto detalha a arquitetura, as tecnologias e o processo completo de inicialização do projeto.
-
 Gerenciador de Leads em Nuvem
 Este projeto consiste em uma aplicação fullstack desenvolvida para gerenciar o fluxo de entrada de contatos de forma escalável. O sistema utiliza uma interface construída em React para o front-end e uma arquitetura baseada em funções serverless no Google Cloud Platform para o processamento de dados.
 
@@ -57,3 +55,4 @@ Ciclo de Validação
 Com o projeto iniciado, o usuário pode preencher os campos, enviar os dados e verificar a resposta de sucesso da nuvem. A inclusão, edição ou remoção do lead refletirá tanto na interface quanto nos logs de auditoria do Google Cloud Platform.
 
 Desenvolvido por Eduardo Vicentini Levy
+
